@@ -1,0 +1,131 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>restaurant</title>
+    
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</head>
+<style>
+    h1, h2, p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0px;
+    }
+    h5{
+        color: orangered;
+        font-size: medium;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    table{
+        width: 50%;
+        float: right;
+    }
+    table.min{
+        width: 30%;
+    }
+    table.max{
+        width: 70%;
+    }
+    td{
+        padding: 5px;
+    }
+    td img, td.imgf{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    input.btn{
+        background-color: orangered;
+        border: 1px solid orangered;
+        color: white;
+        width: 100%;
+        height: 30px;
+    }
+    input.btn:hover{
+        background-color: gray;
+        border-color: gray;
+        color: orangered;
+    }
+    @media screen and (max-width:800px){
+        table{
+            width: 100%;
+            float: none;
+        }
+        table.hhh{padding-left: 0px;}
+    }
+</style>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" id="home"><b>My restaurant</b></a>
+        <a href="home.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <center>
+        <h1>envoyez un message</h1>
+        <h5>bonjour</h5>
+    </center>
+    <table class="hhh">
+        <tr><td><h2>message us</h2></td></tr>
+        <tr>
+            <td><input type="text" style="width: 100%;height: 30px;" placeholder="Nom" ></td>
+            <td><input type="email" style="width: 100%;height: 30px;" placeholder="Email"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="text" style="width: 100%;height: 30px;" placeholder="Sujet" ></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="text" style="width: 100%;height: 60px;" placeholder="message..." max="50%"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="btn" value="envoyer"></td>
+        </tr>
+        
+    </table>
+    <table>
+        <tr>
+            <td colspan="2"><h2>get in touch</h2></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quis consectetur blanditiis doloremque magnam doloribus
+                     aspernatur asperiores? Accusantium corrupti eum aperiam
+                     laborum a numquam iure in tenetur animi, dolore distinctio soluta?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="imgf"><img src="images/me.jpg" alt=""></td>
+            <td>
+                <p><samp>Nom</samp><br>
+                yassine khorchani</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="imgf"><img src="images/loca.png" alt=""></td>
+            <td>
+                <p><samp>Adresse</samp><br>
+                Tunis / ariana</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="imgf"><img src="images/msag.jpg"></td>
+            <td>
+                <p><samp>Email</samp><br>
+                khorchaniyacin@gmail.com</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
